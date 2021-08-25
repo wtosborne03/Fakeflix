@@ -1,7 +1,7 @@
 import "./credits.scss"
 import { motion } from "framer-motion";
 import { creditsFadeInUpVariants } from "../../motionUtils";
-import { GITHUB_AVATAR_URL, GITHUB_BASE_URL } from "../../requests";
+import { GITHUB_BASE_URL } from "../../requests";
 
 const Credits = () => {
 	return (

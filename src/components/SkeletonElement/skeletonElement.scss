@@ -1,5 +1,7 @@
+@use "sass:math";
 @import '../../scss/mixin';
 @import '../../scss/variables';
+
 
 $shine-color: rgba(255,255,255,0.2);
 $animation-duration: 5s;
@@ -124,7 +126,7 @@ $iteration-count: infinite;
   @for $i from 1 through 6 {
     &.poster {
       &:nth-child(#{$i}) {
-        animation-delay: $i * (2.5s / 18);
+        animation-delay: $i * math.div(2.5s, 18);
       }
     }
   }
