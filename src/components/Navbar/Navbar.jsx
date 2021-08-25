@@ -140,9 +140,12 @@ const Navbar = () => {
 											<div>
 											<li
 												className="Navbar__navlinks--link"
-												onClick={() => window.location.href="/profile"}
+												
 											>
-												Profile
+												<NavLink to="/profile" activeClassName="activeNavLink">
+													Profile
+												</NavLink>
+												
 											</li>
 											<li
 												className="Navbar__navlinks--link"
