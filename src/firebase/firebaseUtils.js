@@ -2,18 +2,17 @@ import firebase from "firebase/app"
 import "firebase/firestore"
 import "firebase/auth"
 
-const { REACT_APP_FIREBASE_API_KEY, REACT_APP_FIREBASE_AUTH_DOMAIN, REACT_APP_FIREBASE_PROJECT_ID, REACT_APP_FIREBASE_STORAGE_BUCKET, REACT_APP_FIREBASE_MESSAGING_SENDER_ID, REACT_APP_FIREBASE_APP_ID, REACT_APP_FIREBASE_MEASUREMEMT_ID } = process.env;
 
 // Firebase Configuration Object
 const firebaseConfig = {
-    apiKey: REACT_APP_FIREBASE_API_KEY,
-    authDomain: REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: REACT_APP_FIREBASE_APP_ID,
-    measurementId: REACT_APP_FIREBASE_MEASUREMEMT_ID
-}
+    apiKey: "AIzaSyCgO6glX_Eo-0KI0NnchfWsb5HbfzpN8s0",
+    authDomain: "yumuve-aaec0.firebaseapp.com",
+    projectId: "yumuve-aaec0",
+    storageBucket: "yumuve-aaec0.appspot.com",
+    messagingSenderId: "985724113595",
+    appId: "1:985724113595:web:87f9c292978938c12c0f9e",
+    measurementId: "G-VNMMP7SL55"
+  };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
