@@ -9,6 +9,7 @@ import TVSeries from './pages/TVSeries/TVSeries';
 import Popular from "./pages/Popular/Popular";
 import MyList from './pages/MyList/MyList';
 import Auth from "./pages/Auth/Auth";
+import ProfilePage from "./pages/Profile/Profile";
 import Search from "./pages/Search/Search";
 import Category from "./pages/Category/Category";
 import DetailModal from "./components/DetailModal/DetailModal";
@@ -77,6 +78,11 @@ const App = () => {
                         exact
                         path="/tvseries"
                         render={() => currentUser ? <TVSeries /> : <Redirect to="/login" />}
+                    />
+                    <Route
+                        exact
+                        path="/profile"
+                        render={() => currentUser ? <ProfilePage /> : <Redirect to="/login" />}
                     />
                     <Route
                         exact

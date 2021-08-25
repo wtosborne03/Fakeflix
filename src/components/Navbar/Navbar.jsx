@@ -137,12 +137,19 @@ const Navbar = () => {
 										ref={profileNavRef}
 									>
 										{currentUser && (
+											<div>
+											<li
+												className="Navbar__navlinks--link"
+												onClick={() => window.location.href="/profile"}
+											>
+												Profile
+											</li>
 											<li
 												className="Navbar__navlinks--link"
 												onClick={() => dispatch(signOutStart())}
 											>
 												Sign Out
-											</li>
+											</li></div>
 										)}
 									</ul>
 								)}
